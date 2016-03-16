@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>task03--team introduction</title>
+    <style>
+        body,
+        dl,
+        dd,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        form {
+            margin: 0;
+        }
+        ol,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            box-sizing: border-box;
+        }
+
+        img {
+            border: 1px solid #999;
+        }
+
+        h1 {
+            float: right;
+            font-size: 18px;
+            font-family: "微软雅黑";
+            margin-left: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-family: "微软雅黑";
+        }
+
+        h3 {
+            margin: 20px 0;
+        }
+
+        p {
+            line-height: 36px;
+        }
+
+        .box-style {
+            border: 1px solid #999;
+            background-color: #fff;
+        }
+
+        /*利用自身浮动实现三栏布局csss*/
+        .container {
+            height: 100%;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #999;
+            background-color: #eee;
+            min-width: 600px;
+        }
+
+        .team-logo {
+            float: left;
+            width: 200px;
+            height: 100%;
+            padding: 20px;
+        }
+
+        .team-logo img {
+            float: left;
+        }
+/*
+        .team-logo h1 {
+            float: right;
+            font-size: 18px;
+            font-family: "微软雅黑";
+            margin-left: 20px;
+        }
+*/
+
+        .member-logo {
+            float: right;
+            width: 120px;
+            height: 100%;
+            padding: 20px;
+        }
+
+        .member-logo img {
+            margin-bottom: 15px;
+        }
+
+        .team-intro {
+            margin-left: 220px;
+            margin-right: 140px;
+            padding: 20px;
+            height: 100%;
+        }
+
+/*
+        .team-intro h2 {
+            margin-bottom: 10px;
+        }
+
+        .team-intro h3 {
+            margin: 20px 0;
+        }
+
+        .team-intro p {
+            line-height: 36px;
+        }
+*/
+
+        .clearfix {
+            zoom: 1;
+            clear: both;
+        }
+        /*利用自身浮动实现三栏布局csss结束*/
+
+        /*利用双飞翼实现三栏布局*/
+        .team-intro-wrap {
+            float: left;
+            width: 100%;
+        }
+
+        .team-intro-fly {
+            margin: 0 140px 0 220px;
+            padding: 20px;
+        }
+
+        .team-logo-fly {
+            float: left;
+            width: 200px;
+            margin-left: -100%;
+            padding: 20px;
+        }
+
+        .team-logo-fly img {
+            float: left;
+        }
+
+/*
+        .team-logo-fly h1 {
+            float: right;
+            font-size: 18px;
+            font-family: "微软雅黑";
+            margin-left: 20px;
+        }
+*/
+
+        .member-logo-fly {
+            float: left;
+            width: 120px;
+            margin-left: -120px;
+            padding: 20px;
+        }
+
+        .member-logo-fly img {
+            margin-bottom: 15px;
+        }
+        /*利用双飞翼实现三栏布局css结束*/
+
+        /*圣杯实现三栏布局css*/
+        .team-intro-holygrail {
+            float: left;
+            padding: 20px;
+            width: 100%;
+            position: relative;
+        }
+
+        .team-logo-holygrail {
+            float: left;
+            width: 200px;
+            margin-left: -100%;
+            padding: 20px;
+            position: relative;
+            left: -220px;
+        }
+
+        .team-logo-fly img {
+            float: left;
+        }
+
+        .member-logo-holygrail {
+            float: left;
+            width: 120px;
+            margin-left: -120px;
+            padding: 20px;
+            position: relative;
+            right: -140px;
+        }
+
+        .member-logo-fly img {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 这是利用自身浮动实现三栏布局,关键是把主体div放在最后 -->
+    <div class="container">
+        <div class="team-logo box-style">
+            <img src="team_logo.gif" alt="team-logo" width="80px" height="80px">
+            <h1>hello<br>world</h1>
+        </div>
+        <div class="member-logo box-style">
+            <img src="member1.jpg" alt="captain" width="80px;" height="80px;">
+            <img src="member2.jpg" alt="member" width="80px;" height="80px;">
+            <img src="member3.jpg" alt="member" width="80px;" height="80px;">
+            <img src="member4.jpg" alt="member" width="80px;" height="80px;">
+            <img src="member5.jpg" alt="member" width="80px;" height="80px;">
+        </div>
+        <div class="team-intro box-style">
+            <h2>helloworld——利用自身浮动实现</h2>
+            <p>我们的组长很懒，所以没有团队介绍。。喵~~~~</p>
+            <h3>成员介绍(顺序与右侧头像顺序一致)</h3>
+            <p><strong>杨惠：</strong><strong>队长大人</strong>一个在北京实习的二货妹子。</p>
+            <p><strong>赵峰：</strong>队中大神，在金山实习，项目经验丰富。现实生活中是个小傻小二小天真
+                <strong>Blog地址：</strong><a href="http://www.zfeng.net">www.zfeng.net</a></p>
+            <p><strong>徐淑俊：</strong>队中颜值担当，一个集美貌与技术于一身的大神，目前在南昌实习
+                <strong>Blog地址：</strong><a href="http://simmerblog.sinaapp.com/">simmerblog.sinaapp.com</a></p>
+            <p><strong>路小雨：</strong>队中一个目前工作不是前端工程师，但励志要做前端工程师的<strong>妹子</strong><strong>妹子</strong><strong>妹子</strong></p>
+            <p><strong>李忠杰：</strong>...我编不下去,欢迎大神review,不喜请<strong>狂喷</strong></p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- 利用自身浮动实现三栏布局结束 -->
+
+    <!-- 双飞翼方法实现三栏布局 -->
+    <div class="container" style="overflow:hidden">
+        <div class="team-intro-wrap">
+            <div class="team-intro-fly box-style">
+                <h2>helloworld——双飞翼实现</h2>
+                <p>我们的组长很懒，所以没有团队介绍。。喵~~~~</p>
+                <h3>成员介绍(顺序与右侧头像顺序一致)</h3>
+                <p><strong>杨惠：</strong><strong>队长大人</strong>一个在北京实习的二货妹子。</p>
+                <p><strong>赵峰：</strong>队中大神，在金山实习，项目经验丰富。现实生活中是个小傻小二小天真
+                    <strong>Blog地址：</strong><a href="http://www.zfeng.net">www.zfeng.net</a></p>
+                <p><strong>徐淑俊：</strong>队中颜值担当，一个集美貌与技术于一身的大神，目前在南昌实习
+                    <strong>Blog地址：</strong><a href="http://simmerblog.sinaapp.com/">simmerblog.sinaapp.com</a></p>
+                <p><strong>路小雨：</strong>队中一个目前工作不是前端工程师，但励志要做前端工程师的
+                    <strong>妹子</strong><strong>妹子</strong><strong>妹子</strong> 这是真妹子队长是假的</p>
+                <p><strong>李忠杰：</strong>...我编不下去,欢迎大神review,不喜请<strong>狂喷</strong></p>
+            </div>
+        </div>
+        <div class="team-logo-fly box-style">
+            <img src="team_logo.gif" alt="team-logo" width="80px" height="80px">
+            <h1>hello<br>world</h1>
+        </div>
+        <div class="member-logo-fly box-style">
+            <img src="member1.jpg" alt="captain" width="80px;" height="80px;">
+            <img src="member2.jpg" alt="member" width="80px;" height="80px;">
+            <img src="member3.jpg" alt="member" width="80px;" height="80px;">
+            <img src="member4.jpg" alt="member" width="80px;" height="80px;">
+            <img src="member5.jpg" alt="member" width="80px;" height="80px;">
+        </div>
+    </div>
+    <!-- 双飞翼方法实现三栏布局结束 -->
+
+    <!-- 圣杯实现三栏布局 -->
+    <div class="container" style="overflow:hidden; padding: 20px 160px 20px 240px;">
+        <div class="team-intro-holygrail box-style">
+            <h2>helloworld——圣杯实现</h2>
+            <p>我们的组长很懒，所以没有团队介绍。。喵~~~~</p>
+            <h3>成员介绍(顺序与右侧头像顺序一致)</h3>
+            <p><strong>杨惠：</strong><strong>队长大人</strong>一个在北京实习的二货妹子。</p>
+            <p><strong>赵峰：</strong>队中大神，在金山实习，项目经验丰富。现实生活中是个小傻小二小天真
+                <strong>Blog地址：</strong><a href="http://www.zfeng.net">www.zfeng.net</a></p>
+            <p><strong>徐淑俊：</strong>队中颜值担当，一个集美貌与技术于一身的大神，目前在南昌实习
+                <strong>Blog地址：</strong><a href="http://simmerblog.sinaapp.com/">simmerblog.sinaapp.com</a></p>
+            <p><strong>路小雨：</strong>队中一个目前工作不是前端工程师，但励志要做前端工程师的
+                <strong>妹子</strong><strong>妹子</strong><strong>妹子</strong> 这是真妹子队长是假的</p>
+            <p><strong>李忠杰：</strong>...我编不下去,欢迎大神review,不喜请<strong>狂喷</strong></p>
+        </div>
+        <div class="team-logo-holygrail box-style">
+            <img src="team_logo.gif" alt="team-logo" width="80px" height="80px">
+            <h1>hello<br>world</h1>
+        </div>
+        <div class="member-logo-holygrail box-style">
+            <img src="member1.jpg" alt="captain" width="80px;" height="80px;">
+            <img src="member2.jpg" alt="member" width="80px;" height="80px;">
+            <img src="member3.jpg" alt="member" width="80px;" height="80px;">
+            <img src="member4.jpg" alt="member" width="80px;" height="80px;">
+            <img src="member5.jpg" alt="member" width="80px;" height="80px;">
+        </div>
+    </div>
+</body>
+</html>
