@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>task04</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 400px;
+            height: 200px;
+            background-color: #ccc;
+            margin-top: -100px;
+            margin-left: -200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            overflow: hidden;
+        }
+
+        .left-top,
+        .right-bottom {
+            width: 100px;
+            height: 100px;
+            background-color: #fc0;
+            border-radius: 50px;
+        }
+
+        .left-top {
+            position: absolute;
+            left: -50px;
+            top: -50px;
+        }
+
+        .right-bottom {
+            position: absolute;
+            right: -50px;
+            bottom: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left-top"></div>
+        <div class="right-bottom"></div>
+    </div>
+</body>
+</html>
